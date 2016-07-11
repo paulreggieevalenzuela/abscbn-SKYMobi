@@ -1,0 +1,197 @@
+///////////////////
+// Media Queries //
+///////////////////
+
+// NOTE: Extra small devices are default styles (mobile-first)
+
+// Retina query (remove when not needed)
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	
+}
+
+// Largest devices 1240
+@media (max-width: $screen-lg) {
+	
+}
+
+// Large devices 960
+@media (max-width: $screen-md) {
+	.main-container {
+		.hero {
+			p {
+				font-size: 24px;
+			}
+		}
+		.item-container {
+			flex-direction: row;
+			margin: 0 auto;
+			width: 95%;
+			.box-item {
+				width: auto;
+				.header-description {
+					background-position: bottom center;
+					h2 {
+						font-size: 19px;
+						padding: 20px 0;
+						span {
+							font-size: 24px;
+						}
+					}
+				}
+				article.mobile-description {
+					h4 {
+						font-size: 22px;
+					}
+					p {
+						font-size: 14px;
+					}
+				}
+				a {
+					img {
+						top: 23px;
+						margin: 0 auto;
+						display: flex;
+					}
+				}
+			}
+		}/*item-container*/
+	}/*main-container*/
+}
+
+@media (max-width: 768px) {
+	.main-container {
+		.item-container {
+			.box-item {
+				.header-description {
+					h2 {
+						padding: 10px 0;
+					}
+				}
+				article.mobile-description {
+					h4 {
+						font-size: 22px;
+						padding: 0 20px;
+					}
+				}
+				ul {
+					width: 95%;
+					margin: 0;
+					li {
+						font-size: 14px;
+						&:nth-child(1){
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Medium devices 728
+@media (max-width: $screen-sm) {
+
+}
+
+
+// Small devices 528
+@media (max-width: $screen-xs) {
+	.myModal {
+		.modal-content {
+			width: 90%;
+			.modal-body {
+				section {
+					width: 90%;
+					&.faqs-content {
+						header {
+							h1 {
+								font-size: 24px;
+							}
+						}
+						article {
+							max-height: 300px;
+						}
+					}
+					&.terms-conditions {
+						header {
+							h1 {
+								font-size: 24px;
+							}
+						}
+						article {
+							max-height: 300px;
+						}
+					}
+					header {
+						h4 {
+							font-size: 14px;
+						}
+					}
+					article {
+						header {
+							h3 {
+								font-size: 16px;
+							}
+						}
+						p {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.main-container {
+		.hero {
+			p {
+				font-size: 24px;
+				margin-bottom: 30px;
+			}
+		}
+		.item-container {
+			flex-direction: column;
+			.box-item {
+				width: 85%;
+				margin-bottom: 50px;
+				&:nth-child(2){
+					margin: 0 0 50px 0;
+				}
+				.header-description {
+					h2 {
+						font-size: 21px;
+						span {
+							display: inline-block;
+							font-size: 27px;
+						}
+					}
+				}
+				ul {
+					li {
+						font-size: 12px;
+						&:nth-child(1){
+							font-size: 16px;
+						}
+					}
+				}
+				a {
+					img {
+						top: 23px;
+						margin: 0 auto;
+						display: flex;
+					}
+				}
+			}/*box-item*/
+		}/*item-container*/
+		.fine-print {
+			font-size: 12px;
+			margin: 30px auto 0 auto;
+			width: 95%;
+			ul {
+				margin-top: 20px;
+			}
+		}
+	}/*main-container*/
+}
+
+
+
